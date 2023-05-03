@@ -1,0 +1,146 @@
+.listOfListing {
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  height: 222px;
+  
+}
+
+.row:first-child {
+  background-color: #00aeff;
+  padding: 10px 0;
+  color: white;
+}
+.row:last-child {
+  background-color: #03a9f421;
+  padding: 10px 0;
+}
+
+.checksInOut,
+.listHotels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.listCheckInOut {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+}
+.listCheckInOut li {
+  width: 21%;
+  background-color: #0194d8;
+  border-radius: 12px;
+  padding: 10px 15px;
+  line-height: 1.8;
+}
+.listCheckInOut li h4 {
+  font-size: 13px;
+  font-weight: 400;
+}
+.listCheckInOut li h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.listCheckInOut li:first-child {
+  width: 35% !important;
+}
+.listCheckInOut li:last-child{
+  position: relative;
+}
+.listCheckInOut li:last-child::after{
+  content: "";
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  right: 15px;
+  border-style: solid;
+  border-color: white transparent transparent;
+  border-width: 5.5px;
+}
+
+.searchButton {
+  width: 13%;
+  font-size: 13px;
+  font-weight: 400;
+  border: solid 1px #59c8fb;
+  border-radius: 20px;
+  padding:12px;
+  text-align: center;
+}
+
+.dubaiProperty {
+  font-size: 13px;
+  font-weight: 500;
+  width: 22%;
+}
+.sort {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.sort p {
+  width: 10%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #8a8a8a;
+  text-align: center;
+}
+
+.sort ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 89%;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.sort ul li {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.sort ul li:first-child {
+  background-color: #008055;
+  color: white;
+  border-radius: 12px;
+}
+
+.sort ul li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 60%;
+  background-color: #d8d8d8;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.sort ul li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 60%;
+  background-color: #d8d8d8;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.sort ul li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 60%;
+  background-color: #d8d8d8;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}

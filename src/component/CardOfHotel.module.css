@@ -1,0 +1,234 @@
+.CardOfHotel {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 1px #d0d0cf;
+  position: relative;
+}
+.CardOfHotel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 86%;
+  height: 100%;
+  width: 1px;
+  background-color: #d0d0cf88;
+}
+
+.imgsColumn {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.bigImg {
+  width: 100%;
+  height: 70%;
+}
+.bigImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.smallImgs {
+  width: 100%;
+  height: 29%;
+  display: flex;
+  column-gap: calc(4% / 3);
+}
+.smallImgs img {
+  width: 24%;
+  height: 100%;
+}
+.detailsColumn{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainDetails {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.mainDetails h3{
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.mainDetails .stars {
+  display: flex;
+  column-gap: 2px;
+  font-size: 10px;
+  color: #ffbc00;
+}
+
+.mainDetails .location {
+  display: flex;
+  column-gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #029ae1;
+  align-items: center;
+}
+.bookingWay {
+  display: flex;
+  column-gap: 3px;
+  align-items: center;
+}
+.bookingWay p {
+  padding: 3px 5px;
+  border: solid 1px green;
+  color: green;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.options {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  font-size: 11px;
+}
+.options .breakfast,
+.options .wifi,
+.options .bar {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  color: #8a8a8a;
+}
+.mainDetails .options .moreOption {
+  color: #029ae1;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.mainDetails .lastBooked {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.reviews {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 5px;
+}
+.reviews .rateReview{
+  padding: 5px;
+  width: 55%;
+  background-color: green;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+.reviews .numbersReview{
+  font-size: 10px;
+  color: green;
+}
+
+.pricingColumn {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.pricingColumn .heartIcon {
+  color: #029ae1;
+  font-size: 18px;
+}
+
+.pricingColumn .offerSale {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  align-items: flex-end;
+}
+
+.sale {
+  font-size: 9px;
+  background-color: red;
+  color: white;
+  padding: 2px 3px 2px 17px;
+  line-height: 14px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.sale::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-color: transparent transparent transparent white;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.saleCode {
+  font-size: 8px;
+  color: red;
+}
+
+.pricingColumn .amountOfSale {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  align-items: flex-end;
+}
+
+.dashedAmount {
+  font-size: 10px;
+  text-decoration: line-through;
+  color: #8a8a8a;
+}
+.newAmount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #029ae1;
+}
+.detailesOfPay {
+  font-size: 9px;
+}
+.detailesOfPay span {
+  display: block;
+  color: #8a8a8a;
+  font-size: 10px;
+}
+
+.allAreSold {
+  color: red;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.allAreSold span {
+  display: block;
+  color: #8a8a8a;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.missedMessage {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  margin-right: 10px;
+}
